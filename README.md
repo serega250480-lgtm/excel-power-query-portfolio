@@ -4,23 +4,21 @@ This repository contains practical hands-on projects, dataset transformations, a
 
 ---
 
-## 🛠️ Key Skills & Data Transformation Techniques
+## 🏆 Featured Capstone Project: End-to-End Sales Pipeline
 
-* **⚙️ ETL Processes**: Data extraction, query reference (`Reference`), merging datasets (`Merge`), and structural transformations (`Pivot` / `Unpivot`).
-* **🔤 Text Cleaning**: Column splitting (`Split Column`), string merging (`Merge Columns`), and custom logic (`Conditional Column`).
-* **📅 Date & Error Management**: Locale configuration, error handling (`Replace Errors`), and duration metrics (`Subtract Days`).
+* **File**: `PQ_Capstone_Project.xlsx`
+* **Objective**: Automate the consolidation and cleaning of raw sales, customer, and product datasets into a unified analytical data model (`Sales_Master_Enriched`).
+* **Key Transformations**:
+  * **Customer Data**: Split `Full_Name` and `Location_Code`, generated custom `Country_Group` logic via `Conditional Column`.
+  * **Sales Data**: Handled date conversion errors (`Replace Errors` $\rightarrow$ `null`), calculated delivery duration (`Subtract Days`), and computed total revenue (`Total_Revenue`).
+  * **Data Modeling**: Merged 3 raw sources using `Merge Queries as New` into a clean star-schema friendly dataset.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Practice Exercises
 
 | File | Description | Key Tools Used |
 | :--- | :--- | :--- |
 | `PQ_Lesson11_Practice.xlsx` | Text transformation & customer segmentation | `Split Column`, `Merge Columns`, `Conditional Column` |
 | `PQ_Lesson12_Practice.xlsx` | Reshaping wide quarterly sales reports into tall tables | `Unpivot Other Columns`, `Pivot Column` |
-| `PQ_Lesson13_Practice.xlsx` | Handling date calculations and string-to-date conversion errors | `Replace Errors`, `Subtract Days`, `Locale` |
-
----
-
-## 🎯 Project Goal
-Demonstrate practical proficiency in preparing clean, structured, and resilient data models for business analysis and reporting.
+| `PQ_Lesson13_Practice.xlsx` | Handling date calculations and string-to-date conversion errors | `Replace Errors`, `Subtract Days` |
